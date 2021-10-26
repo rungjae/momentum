@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Momentum</title>
+  </head>
+  <body>
+    <h2 class="clock fade-In">00:00:00</h2>
+    <h2 class="today fade-In"></h2>
+    <h1 class="greeting hidden fade-In"></h1>
+
+    <form class="hidden login-form fade-In">
+      <input
+        required
+        maxlength="15"
+        type="text"
+        placeholder="What is your name?"
+        style="background-color: transparent; text-align: center"
+        onfocus="this.placeholder=''"
+        onblur="this.placeholder='What is your name?'"
+      />
+    </form>
+
+    <form class="todo-form fade-In">
+      <input
+        required
+        type="text"
+        style="background-color: transparent; text-align: center"
+        placeholder="Write a To Do list here!"
+        onfocus="this.placeholder=''"
+        onblur="this.placeholder='Write a To Do list here!'"
+      />
+    </form>
+    <ul class="todo-list"></ul>
+    <div class="quote">
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="weather">
+      <span></span>
+      <span></span>
+    </div>
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script
+    src="https://kit.fontawesome.com/6478f529f2.js"
+    crossorigin="anonymous"
+  ></script>
+  </body>
+</html>
