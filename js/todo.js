@@ -24,7 +24,7 @@ function paintToDo(newTodo) {
     const span = document.createElement("span"); // html에 span 생성
     span.innerText = newTodo.text; 
     const button = document.createElement("button"); // html에 button 생성
-    button.innerText = "X"; // button안에 X 텍스트 표시
+    button.innerText = "❌"; // button안에 X 텍스트 표시
     button.addEventListener("click", deleteToDo);
     li.appendChild(span); // Li 안에 Span을 넣는다
     li.appendChild(button);// li안에 button을 넣는다
